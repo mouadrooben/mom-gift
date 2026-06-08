@@ -5,8 +5,8 @@ let matchedCards = [];
 let moves = 0;
 let score = 0;
 
-// Emojis for the game
-const emojis = ['🎁', '🎂', '🎉', '❤️', '🌹', '🎈', '👑', '💝'];
+// Emojis for the game - DOUBLED to 16 cards (8 pairs)
+const emojis = ['🎁', '🎂', '🎉', '❤️', '🌹', '🎈', '👑', '💝', '🎊', '🎀', '💐', '🌟', '💖', '🎵', '🌺', '🎆'];
 
 // Birthday Letter in Arabic with Emojis
 const birthdayLetter = `يا أمي الحبيبة، 💕

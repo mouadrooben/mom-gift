@@ -370,10 +370,17 @@ header p {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .memory-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+}
+
 @media (max-width: 768px) {
     .memory-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
     }
 
     header h1 {
@@ -408,9 +415,17 @@ header p {
     .game-info {
         font-size: 1.1em;
     }
+
+    .card-front {
+        font-size: 1.8em;
+    }
+
+    .card-back {
+        font-size: 2.2em;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     body {
         padding: 10px;
     }
@@ -426,11 +441,11 @@ header p {
     }
 
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     header p {
-        font-size: 0.85em;
+        font-size: 0.9em;
     }
 
     .theme-switcher {
@@ -440,8 +455,8 @@ header p {
     }
 
     .theme-btn {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         font-size: 18px;
         border: 2px solid var(--primary-color);
     }
@@ -463,11 +478,11 @@ header p {
     }
 
     .card-front {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .card-back {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .reset-btn {
@@ -481,7 +496,7 @@ header p {
     }
 
     .envelope p {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
 
     .close-btn {
@@ -493,16 +508,20 @@ header p {
     .container {
         max-width: 100%;
     }
+
+    .game-section {
+        padding: 0 5px;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .memory-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 6px;
     }
 
     header h1 {
-        font-size: 1.3em;
+        font-size: 1.4em;
         margin-bottom: 5px;
     }
 
@@ -515,6 +534,57 @@ header p {
     }
 
     .game-info {
+        font-size: 0.95em;
+    }
+
+    .card-front {
+        font-size: 1.3em;
+    }
+
+    .card-back {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 360px) {
+    .memory-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    header h1 {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        font-size: 0.75em;
+    }
+
+    .letter-content {
+        font-size: 1.05em;
+    }
+
+    .game-info {
         font-size: 0.9em;
+    }
+
+    .card-front {
+        font-size: 1.2em;
+    }
+
+    .card-back {
+        font-size: 1.5em;
+    }
+
+    .theme-switcher {
+        top: 5px;
+        right: 5px;
+    }
+
+    .theme-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
     }
 }
